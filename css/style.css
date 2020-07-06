@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -59,7 +63,8 @@ a {
 }
 
 .page-section {
-  margin: 200px 0;
+  margin: 200px auto;
+  max-width: 1920px;
 }
 
 .title {
@@ -143,7 +148,129 @@ a {
   line-height: 66px;
 }
 
-.fairy-tale {
-
+.slider-container {
+  position: absolute;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.fairy-tale__slider {
+  width: 50%;
+}
+
+.fairy-tale__inner,
+.our-trip__inner {
+  position: relative;
+}
+
+.fairy-tale__body {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.fairy-tale__body-title {
+  font-family: 'RobotoCondensed-Regular';
+}
+
+.fairy-tale__text {
+  padding: 10px 0;
+}
+
+.our-trip__title span{
+  margin-left: 240px;
+}
+
+.our-trip__slider {
+  width: 50%;
+  margin-left: auto;
+}
+
+.our-trip__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.our-trip__list {
+  margin: 5px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.our-trip__list li:first-child {
+  margin-bottom: 20px;
+  font-family: 'RobotoCondensed-Regular';
+}
+
+.out-trip__btn {
+  font-family: 'RobotoCondensed-Light';
+  font-size: 24px;
+  line-height: 28px;
+  border: 1px solid #e2ab3f;
+  padding: 11px 53px;
+}
+
+.our-trip__content {
+  width: 50%;
+  padding-right: 55px;
+}
+
+.hotel__title span {
+  margin-left: 130px;
+}
+
+.hotel__inner {
+  display: flex;
+}
+
+.hotel__images {
+  margin-right: 100px;
+}
+
+.hotel__text {
+  margin-bottom: 20px;
+}
+
+.hotel__gallery {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel__gallery a {
+  margin-top: 50px;
+}
+
 

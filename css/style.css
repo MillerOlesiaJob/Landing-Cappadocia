@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'balqis';
   src: url('../fonts/balqis.woff2') format('woff2'),

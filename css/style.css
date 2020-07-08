@@ -287,7 +287,7 @@ ul {
 
 .price__on {
   margin-right: 70px;
-  width: 530px;
+  max-width: 530px;
 }
 
 .price__off-title,
@@ -473,6 +473,18 @@ ul {
     margin-top: -50px;
     font-size: 50px;
   }
+
+  .page-section {
+    margin: 100px auto;
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .price {
+    background-position: center right 5%;
+  }
 }
 
 @media(max-width: 991px) {
@@ -485,13 +497,63 @@ ul {
     position: static;
   }
 
-  .fairy-tale__slider {
+  .fairy-tale__slider,
+  .our-trip__slider {
     width: 100%;
   }
 
-  .fairy-tale__body {
+  .our-trip__slider {
+    margin-top: 30px;
+  }
+
+  .our-trip__slider img,
+  .fairy-tale__slider img {
+    width: 100%;
+  }
+
+  .fairy-tale__body,
+  .our-trip__body {
     width: 100%;
     padding-left: 0;
+  }
+
+  .our-trip__body {
+    display: contents;
+  }
+
+  .our-trip__list {
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .hotel__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel__inner img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hotel__gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hotel__gallery a {
+    flex-basis: 20%;
+    margin: 5px;
+  }
+
+  .price {
+    background-image: url(../images/small-bullon.svg);
+    background-position: top 10% right 10%;
+  }
+
+  .contacts__info {
+    padding-right: 25px;
   }
 }
 
@@ -562,6 +624,55 @@ ul {
     margin-left: 110px;
   }
 
+  .our-trip__title span {
+    margin-left: 150px;
+  }
+
+  .our-trip__body {
+    display: block;
+  }
+
+  .our-trip__list {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .hotel__title span,
+  .our-trip__title span {
+    margin-left: 100px;
+  }
+
+  .hotel__gallery a {
+    flex-basis: 40%;
+    margin: 5px;
+  }
+
+  .price__inner {
+    flex-direction: column;
+  }
+
+  .price__off-title,
+  .price__on-title {
+    margin-bottom: 25px;
+  }
+
+  .contacts__inner {
+    display: block;
+  }
+
+  .contacts__inner img {
+    margin-top: 25px;
+  }
+
+  .contacts__info {
+    margin-bottom: 20px;
+  }
+
+  .contacts__form-title {
+    margin-bottom: 25px;
+  }
+
 }
 
 @media(max-width: 370px) {
@@ -599,8 +710,32 @@ ul {
     font-size: 20px;
   }
 
-  .fairy-tale__title span {
+  .fairy-tale__title span,
+  .hotel__title span {
     margin-left: 90px;
+  }
+
+  .our-trip__title span {
+    margin-left: 125px;
+  }
+
+  .our-trip__container {
+    padding-left: 25px !important;
+    padding-right: 25px;
+  }
+
+  .hotel__gallery {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .price__off-title,
+  .price__on-title {
+    margin-bottom: 15px;
+  }
+
+  .price__title span {
+    margin-left: 50px;
   }
 }
 

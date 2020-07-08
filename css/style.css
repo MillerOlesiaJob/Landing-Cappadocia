@@ -555,6 +555,25 @@ ul {
   .contacts__info {
     padding-right: 25px;
   }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer__inner {
+    flex-direction: column-reverse;
+  }
+
+  .footer__contacts {
+    height: 400px;
+    width: 270px;
+  }
+
+  .footer__contacts-title {
+    font-size: 50px;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }
 }
 
 @media(max-width: 840px) {
@@ -673,6 +692,10 @@ ul {
     margin-bottom: 25px;
   }
 
+  .footer__text {
+    font-size: 50px;
+  }
+
 }
 
 @media(max-width: 370px) {
@@ -702,11 +725,29 @@ ul {
     margin-left: 18px;
   }
 
-  .title {
+  .title,
+  .contacts__date,
+  .contacts__price {
     font-size: 50px;
   }
 
-  .title span {
+  .contacts__price {
+    margin-left: 50px;
+  }
+
+  .contacts__date {
+    margin-left: 10px;
+  }
+
+  .contacts__date span,
+  .contacts__price span {
+    margin-left: 80px;
+    margin-top: -35px;
+  }
+
+  .title span,
+  .contacts__date span,
+  .contacts__price span {
     font-size: 20px;
   }
 
@@ -717,6 +758,11 @@ ul {
 
   .our-trip__title span {
     margin-left: 125px;
+  }
+
+  .out-trip__btn {
+    padding: 11px 40px;
+    display: block;
   }
 
   .our-trip__container {
@@ -736,6 +782,23 @@ ul {
 
   .price__title span {
     margin-left: 50px;
+  }
+
+  .contacts__inner img {
+    width: 100%;
+  }
+
+  .contacts__form-title {
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  .contacts__info {
+    text-align: left;
+  }
+
+  .footer__text {
+    font-size: 42px;
   }
 }
 
